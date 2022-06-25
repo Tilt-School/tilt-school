@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "hooks": "libs/hooks",
+    "services": "libs/services",
     "tilt-school": "apps/tilt-school",
     "tilt-school-e2e": "apps/tilt-school-e2e"
   }
