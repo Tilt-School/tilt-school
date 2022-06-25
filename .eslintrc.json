@@ -2,6 +2,37 @@
   "root": true,
   "ignorePatterns": ["**/*"],
   "plugins": ["@nrwl/nx"],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off",
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "class",
+        "next": "class"
+      },
+      {
+        "blankLine": "any",
+        "prev": ["let", "const"],
+        "next": ["let", "const"]
+      },
+      {
+        "blankLine": "any",
+        "prev": "expression",
+        "next": "expression"
+      },
+      {
+        "blankLine": "any",
+        "prev": ["import", "export"],
+        "next": ["import", "export"]
+      }
+    ]
+  },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
