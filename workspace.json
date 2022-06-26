@@ -4,7 +4,7 @@
   "projects": {
     "hooks": "libs/hooks",
     "services": "libs/services",
-    "tilt-school": "apps/tilt-school",
-    "tilt-school-e2e": "apps/tilt-school-e2e"
+    "tilt-school-landing": "apps/tilt-school-landing",
+    "tilt-school-landing-e2e": "apps/tilt-school-landing-e2e"
   }
 }

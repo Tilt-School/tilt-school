@@ -8,7 +8,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
     <>
       <StoreProvider>
         <Head>
-          <title>Welcome to tilt-school!</title>
+          <title>Welcome to tilt-school-landing!</title>
         </Head>
         <main className='app'>
           <Component {...pageProps} />
