@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/tilt-school",
+  "sourceRoot": "apps/tilt-school-landing",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,8 +8,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/tilt-school",
-        "outputPath": "dist/apps/tilt-school"
+        "root": "apps/tilt-school-landing",
+        "outputPath": "dist/apps/tilt-school-landing"
       },
       "configurations": {
         "development": {},
@@ -20,16 +20,16 @@
       "executor": "@nrwl/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "tilt-school:build",
+        "buildTarget": "tilt-school-landing:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "tilt-school:build:development",
+          "buildTarget": "tilt-school-landing:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "tilt-school:build:production",
+          "buildTarget": "tilt-school-landing:build:production",
           "dev": false
         }
       }
@@ -37,14 +37,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "tilt-school:build:production"
+        "buildTarget": "tilt-school-landing:build:production"
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/tilt-school"],
+      "outputs": ["coverage/apps/tilt-school-landing"],
       "options": {
-        "jestConfig": "apps/tilt-school/jest.config.ts",
+        "jestConfig": "apps/tilt-school-landing/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -52,7 +52,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/tilt-school/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/tilt-school-landing/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

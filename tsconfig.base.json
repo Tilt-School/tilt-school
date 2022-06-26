@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tilt-school/*": ["libs/*/src"],
       "@tilt-school/hooks": ["libs/hooks/src/index.ts"],
       "@tilt-school/services": ["libs/services/src/index.ts"]
     }

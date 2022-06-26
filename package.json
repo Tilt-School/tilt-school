@@ -1,15 +1,15 @@
 {
-  "name": "tilt-school",
+  "name": "tilt-school-landing",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "nx run-many --target=build --projects=tilt-school",
+    "build": "nx run-many --target=build --projects=tilt-school-landing",
     "affected:build": "nx affected --target=build",
-    "ts:start": "nx serve tilt-school",
-    "ts:build": "nx build tilt-school",
-    "ts:test": "nx test tilt-school",
-    "ts:e2e": "nx serve tilt-school:e2e",
-    "ts:analyze": "nx analyze tilt-school",
+    "landing:start": "nx serve tilt-school-landing",
+    "landing:build": "nx build tilt-school-landing",
+    "landing:test": "nx test tilt-school-landing",
+    "landing:e2e": "nx serve tilt-school-landing:e2e",
+    "landing:analyze": "nx analyze tilt-school-landing",
     "prepare": "husky install"
   },
   "private": true,
