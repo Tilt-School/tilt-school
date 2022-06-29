@@ -6,12 +6,10 @@ type StoreProviderProps = React.PropsWithChildren<Record<string, unknown>>;
 
 const store = makeStore();
 
-const StoreProvider: React.FC<StoreProviderProps> = ({ children }) => {
+export default function StoreProvider({ children }: StoreProviderProps) {
   return (
     <div>
       <Provider store={store}>{children}</Provider>
     </div>
   );
-};
-
-export default StoreProvider;
+}

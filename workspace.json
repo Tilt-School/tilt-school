@@ -2,9 +2,13 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "assets": "libs/assets",
     "hooks": "libs/hooks",
+    "providers": "libs/providers",
     "services": "libs/services",
+    "styles": "libs/styles",
     "tilt-school-landing": "apps/tilt-school-landing",
-    "tilt-school-landing-e2e": "apps/tilt-school-landing-e2e"
+    "tilt-school-landing-e2e": "apps/tilt-school-landing-e2e",
+    "ui": "libs/ui"
   }
 }
